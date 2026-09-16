@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho Checkout</title>
+     <link rel="icon" class="logo" type="image/png" href="./WhatsApp Image 2026-09-03 at 7.38.46 PM.jpeg">
+    <link rel="stylesheet" href="buyNow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+   
+</head>
+<body>
+
+
+    <header>
+
+        <h1>meesho</h1>
+
+        <div class="steps">
+            <span class="active">1<br>Review</span>
+            <span>2<br>Payment</span>
+        </div>
+
+    </header>
+
+
+<div class="checkout-container">
+
+    <!-- LEFT -->
+
+    <div class="left-section">
+
+        <h2>Product Details</h2>
+
+        <div class="delivery-info">
+            🚚 Estimated Delivery by Sunday, 20th Sep
+        </div>
+
+        <div class="product-box">
+
+            <img id="buyProductImage" src="" alt="Product">
+
+            <div class="product-info">
+
+                <h3 id="buyProductName"></h3>
+
+                <p class="price" id="buyProductPrice"></p>
+
+                <p>
+                    Size:
+                    <span id="buyProductSize"></span>
+                    &nbsp; • &nbsp;
+                    Qty: 1
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="seller-box">
+
+            Sold by:
+            <span id="buySellerName"></span>
+
+        </div>
+
+
+        <!-- DELIVERY ADDRESS -->
+
+        <h2 class="address-title">
+            <i class="fa-solid fa-location-dot"></i>
+            Delivery Address
+        </h2>
+
+        <div class="address-box">
+
+            <input
+                type="text"
+                id="deliveryName"
+                placeholder="Enter your name"
+            >
+
+            <textarea
+                id="deliveryAddress"
+                placeholder="Enter your delivery address"
+            ></textarea>
+
+            <input
+                type="text"
+                id="deliveryPincode"
+                placeholder="Enter pincode"
+                maxlength="6"
+            >
+
+            <input
+                type="tel"
+                id="deliveryMobile"
+                placeholder="Enter mobile number"
+                maxlength="10"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT -->
+
+    <div class="right-section">
+
+        <h2>Price Details (1 Item)</h2>
+
+        <div class="price-row">
+            <span>Product Price</span>
+            <span id="productPriceDetails"></span>
+        </div>
+
+        <div class="price-row discount">
+            <span>Total Discount</span>
+            <span>-₹20</span>
+        </div>
+
+        <hr>
+
+        <div class="order-total">
+            <span>Order Total</span>
+            <span id="orderTotal"></span>
+        </div>
+
+        <div class="discount-message">
+            🎉 Yay! Your total discount is ₹20
+        </div>
+
+        <p class="continue-text">
+            Clicking on Continue will not deduct any money
+        </p>
+
+        <button id="continueBtn">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+ <div id="loadingScreen">
+    <div class="loader">m</div>
+    
+    </div>
+
+    <script src="buyNow.js"></script>
+</body>
+</html>

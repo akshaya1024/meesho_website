@@ -1,0 +1,522 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+
+/* HEADER */
+
+header {
+    height: 90px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 100px;
+}
+
+header h1 {
+    color: purple;
+    font-size: 40px;
+    margin: 0;
+}
+
+.steps {
+    display: flex;
+    gap: 120px;
+    text-align: center;
+    color: #aaa;
+}
+
+.steps .active {
+    color: purple;
+}
+
+
+/* MAIN */
+
+.checkout-container {
+    display: flex;
+    gap: 30px;
+
+    width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* LEFT */
+
+.left-section {
+    width: 700px;
+}
+
+.left-section h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.delivery-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 16px;
+}
+
+
+.product-box {
+    border: 1px solid #ddd;
+    border-top: none;
+
+    padding: 20px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.product-box img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+}
+
+
+.product-info h3 {
+    margin: 5px 0 15px;
+    font-size: 17px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.seller-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+
+/* ADDRESS */
+
+.address-title {
+    margin-top: 30px;
+}
+
+.address-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.address-box input,
+.address-box textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+.address-box textarea {
+    height: 80px;
+    resize: none;
+}
+
+
+/* RIGHT */
+
+.right-section {
+    width: 350px;
+    height: fit-content;
+
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+.right-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+
+.price-row,
+.order-total {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px 0;
+}
+
+.discount {
+    color: green;
+}
+
+.order-total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.discount-message {
+    background-color: #e5f7ed;
+    padding: 15px;
+
+    color: green;
+    margin: 20px 0;
+}
+
+
+.continue-text {
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}
+
+
+#continueBtn {
+    width: 100%;
+    height: 50px;
+
+    background-color: purple;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+#loadingScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.411);
+    z-index: 99999;
+
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    font-size: 50px;
+    color: purple;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE : 1025px TO 1440px
+   ========================================== */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    /* HEADER */
+
+    header {
+        padding: 0 60px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    .steps {
+        gap: 90px;
+    }
+
+
+    /* MAIN CONTAINER */
+
+    .checkout-container {
+        width: 90%;
+        max-width: 1200px;
+        gap: 25px;
+    }
+
+
+    /* LEFT SECTION */
+
+    .left-section {
+        width: calc(100% - 375px);
+    }
+
+
+    /* RIGHT SECTION */
+
+    .right-section {
+        width: 350px;
+        flex-shrink: 0;
+    }
+
+
+    /* PRODUCT */
+
+    .product-box {
+        padding: 18px;
+    }
+
+    .product-box img {
+        width: 95px;
+        height: 95px;
+    }
+
+
+    /* ADDRESS */
+
+    .address-box {
+        padding: 18px;
+    }
+
+
+    /* RIGHT PRICE BOX */
+
+    .right-section {
+        padding: 22px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE : 768px TO 1024px
+   ========================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* HEADER */
+
+    header {
+        height: 80px;
+        padding: 0 40px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    .steps {
+        gap: 60px;
+    }
+
+
+    /* MAIN CONTAINER */
+
+    .checkout-container {
+        width: 90%;
+        margin: 25px auto;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+
+    /* LEFT SECTION */
+
+    .left-section {
+        width: calc(100% - 320px);
+    }
+
+    .left-section h2 {
+        font-size: 18px;
+    }
+
+
+    /* PRODUCT */
+
+    .product-box {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .product-box img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .product-info h3 {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 17px;
+    }
+
+
+    /* DELIVERY INFO */
+
+    .delivery-info {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+
+    /* SELLER */
+
+    .seller-box {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+
+    /* ADDRESS */
+
+    .address-title {
+        margin-top: 25px;
+        font-size: 18px;
+    }
+
+    .address-box {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .address-box input,
+    .address-box textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+
+    /* RIGHT SECTION */
+
+    .right-section {
+        width: 300px;
+        padding: 20px;
+        flex-shrink: 0;
+    }
+
+    .right-section h2 {
+        font-size: 17px;
+    }
+
+    .price-row,
+    .order-total {
+        margin: 15px 0;
+    }
+
+    .order-total {
+        font-size: 18px;
+    }
+
+    .discount-message {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .continue-text {
+        font-size: 11px;
+    }
+
+    #continueBtn {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+
+    header {
+        height: 65px !important;
+        padding: 0 15px !important;
+    }
+
+    header h1 {
+        font-size: 28px !important;
+    }
+
+    .steps {
+        gap: 20px !important;
+    }
+
+    .checkout-container {
+        width: 94% !important;
+        max-width: none !important;
+        margin: 20px auto !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .left-section {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    .right-section {
+        width: 100% !important;
+        max-width: none !important;
+        order: 2 !important;
+        flex-shrink: 0 !important;
+    }
+
+    .delivery-info {
+        padding: 12px !important;
+        font-size: 13px !important;
+    }
+
+    .product-box {
+        padding: 12px !important;
+        gap: 12px !important;
+    }
+
+    .product-box img {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .seller-box {
+        padding: 12px !important;
+    }
+
+    .address-box {
+        width: 100% !important;
+        padding: 12px !important;
+    }
+
+    .address-box input,
+    .address-box textarea {
+        width: 100% !important;
+    }
+
+    .right-section {
+        padding: 18px !important;
+    }
+
+    #continueBtn {
+        width: 100% !important;
+    }
+}

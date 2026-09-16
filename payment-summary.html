@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho Checkout</title>
+     <link rel="icon" class="logo" type="image/png" href="./WhatsApp Image 2026-09-03 at 7.38.46 PM.jpeg">
+    <link rel="stylesheet" href="payment-summary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+   
+</head>
+<body>
+
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            meesho
+        </div>
+
+        <div class="steps">
+
+            <div class="step active">
+                <span>✓</span>
+                <p>Review</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>2</span>
+                <p>Payment</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <div class="payment-container">
+
+        <!-- LEFT SIDE -->
+        <div class="left-section">
+
+            <h2>Select Payment Method</h2>
+
+            <!-- CASH ON DELIVERY -->
+            <div class="payment-option">
+
+                <div class="payment-content">
+
+                    <strong id="codPrice">₹0</strong>
+
+                    <span>Cash on Delivery</span>
+
+                    <span>💳</span>
+
+                </div>
+
+                <input type="radio"
+                    name="payment"
+                    value="cod">
+
+            </div>
+
+
+            <!-- PAY ONLINE -->
+            <div class="payment-option online">
+
+                <div class="payment-content">
+
+                    <div>
+
+                        <del id="onlineOldPrice">₹0</del>
+
+                        <strong id="onlinePrice">₹0</strong>
+
+                        <small>Save ₹24</small>
+
+                    </div>
+
+                    <span>Pay Online</span>
+
+                    <span>⚡</span>
+
+                </div>
+
+                <input type="radio"
+                    name="payment"
+                    value="online">
+
+            </div>
+
+            <p class="bank-offer">
+                🟢 Extra discount with bank offers
+            </p>
+
+
+            <!-- RESELLING -->
+            <div class="reselling">
+
+                <div>
+
+                    <h3>Reselling the order?</h3>
+
+                    <p>
+                        Click on 'Yes' to add Final Price
+                    </p>
+
+                </div>
+
+                <div class="yes-no">
+
+                    <button id="noBtn" class="selected">
+                        No
+                    </button>
+
+                    <button id="yesBtn">
+                        Yes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="right-section">
+
+            <h2>Price Details (1 Item)</h2>
+
+            <div class="price-row">
+
+                <span>Product Price</span>
+
+                <span id="productPrice">
+                    + ₹0
+                </span>
+
+            </div>
+
+
+            <div class="price-row discount">
+
+                <span>Total Discounts</span>
+
+                <span id="totalDiscount">
+                    - ₹0
+                </span>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="order-total">
+
+                <span>Order Total</span>
+
+                <strong id="orderTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="discount-message">
+
+                🟢 Yay! Your total discount is
+                <span id="discountMessage">₹0</span>
+
+            </div>
+
+
+            <button id="placeOrderBtn">
+                Place Order
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOADER -->
+    <div id="loadingScreen">
+
+        <div class="loader">m</div>
+
+    </div>
+
+    <div id="successToast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage"></span>
+    </div>
+    <script src="payment-summary.js"></script>
+
+    </body>
+    </html>

@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    color: rgba(0, 0, 0, 0.742);
+}
+
+
+.header {
+    height: 80px;
+    padding-bottom: 13px;
+    border-bottom: 1.5px solid rgba(62, 2, 62, 0.231);
+}
+
+.header img {
+    height: 38px;
+    width: 180px;
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+
+.delete-account{
+    margin-top: 200px;
+    margin-left: 150px;
+    
+}
+.delete-account p{
+    color: red;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.delete-account span{
+    color: rgba(128, 128, 128, 0.806);
+}
+
+
+#loadingScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.411);
+    z-index: 99999;
+
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    font-size: 50px;
+    color: purple;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+
+#deletePopup {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green ;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 99999;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .header {
+        height: 80px;
+    }
+
+    .header img {
+        width: 170px;
+        height: 36px;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+
+    .delete-account {
+        margin-top: 180px;
+        margin-left: 100px;
+    }
+
+    .delete-account p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .delete-account span {
+        font-size: 18px;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header {
+        height: 75px;
+    }
+
+    .header img {
+        width: 160px;
+        height: 35px;
+        margin-left: 30px;
+        margin-top: 14px;
+    }
+
+    .delete-account {
+        margin-top: 150px;
+        margin-left: 60px;
+        margin-right: 40px;
+    }
+
+    .delete-account p {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .delete-account span {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #deletePopup {
+        font-size: 15px;
+        padding: 13px 22px;
+    }
+
+}
+@media screen and (max-width: 425px) {
+
+    .header {
+        height: 65px;
+        padding-bottom: 0;
+    }
+
+    .header img {
+        width: 145px;
+        height: 32px;
+        margin-left: 15px;
+        margin-top: 14px;
+    }
+
+    .delete-account {
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .delete-account p {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .delete-account span {
+        display: block;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #loadingScreen {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .loader {
+        font-size: 45px;
+    }
+
+    #deletePopup {
+        width: 90%;
+        bottom: 25px;
+        text-align: center;
+        font-size: 14px;
+        padding: 13px 15px;
+    }
+
+}

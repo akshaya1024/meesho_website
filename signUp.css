@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    color: rgba(0, 0, 0, 0.742);
+}
+.header{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 13px;
+    border-bottom: 1.5px solid rgba(62, 2, 62, 0.231);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.meeshologo{
+    height: 38px;
+    width: 180px;
+    margin-left: 50px;
+    margin-top: 15px;
+    
+}
+.searchbar{
+    height: 45px;
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+.become{
+    margin-left: 10px;
+    margin-top: 10px;
+    border-right:2px solid rgba(128, 0, 128, 0.132);
+    padding-right: 20px;
+
+
+}
+.become p{
+    margin-top: 15px;
+}
+.investor{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 20px;
+
+
+}
+.investor p{
+    margin-top: 15px;
+}
+.signUpPage{
+    background-color:rgba(255, 192, 203, 0.315);
+    height: 1000px;
+    width: 100%;
+    position: relative;
+}
+.mainPage{
+    height: 650px;
+    width: 450px;
+    border-radius: 20px;
+    left: 430px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    
+}
+.mainPage img{
+    height: 220px;
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.signUpdetails{
+    margin-left: 40px;
+    margin-top: 50px;
+    position: absolute;
+}
+.signUpdetails span{
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.628);
+    
+}
+.signUpdetails p{
+    font-weight: bold;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.68);
+    display: inline;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+.signUpdetails  input{
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.486);
+    padding-bottom: 5px;
+    outline: none;
+}
+.signUpdetails button{
+    height: 50px;
+    width: 350px;
+    background-color: rgb(170, 4, 170);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    
+}
+.conditions{
+    position: absolute;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.692);
+    left: 100px;
+    top: 570px;
+    font-weight: 500;
+}
+.conditions span{
+    color: purple;
+}
+
+#verifyPopup {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 9999;
+}
+
+#numberError {
+    color: red;
+    font-size: 13px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+    display: block;
+}
+
+/* ================================= */
+/* 1440px TO 1025px RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+
+    /* Header */
+    .header {
+        width: 100%;
+        gap: 8px;
+        padding: 0 30px 13px;
+        align-items: center;
+    }
+
+    .meeshologo {
+        width: 160px;
+        height: 36px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .searchbar {
+        width: 500px;
+        height: 43px;
+        margin-left: 10px;
+        margin-top: 15px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.491);
+    }
+
+    .become {
+        margin-left: 10px;
+        margin-top: 10px;
+        padding-right: 15px;
+    }
+
+    .become p {
+        margin-top: 15px;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .investor {
+        margin-left: 5px;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+
+    .investor p {
+        margin-top: 15px;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+
+    /* Main background */
+    .signUpPage {
+        width: 100%;
+        min-height: 1000px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+
+    /* Signup card */
+    .mainPage {
+        width: 450px;
+        height: 650px;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .mainPage img {
+        width: 450px;
+        height: 220px;
+    }
+
+
+    /* Signup details */
+    .signUpdetails {
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .signUpdetails input {
+        font-size: 18px;
+    }
+
+    .signUpdetails button {
+        width: 350px;
+        height: 50px;
+        margin-top: 50px;
+    }
+
+
+    /* Terms and conditions */
+    .conditions {
+        left: 100px;
+        top: 570px;
+        font-size: 14px;
+    }
+
+}
+
+/* ================================= */
+/* 1024px TO 769px RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    /* Header */
+    .header {
+        width: 100%;
+        gap: 5px;
+        padding: 0 20px 13px;
+        align-items: center;
+    }
+
+    .meeshologo {
+        width: 145px;
+        height: 35px;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+    .searchbar {
+        width: 380px;
+        height: 42px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .become {
+        margin-left: 5px;
+        margin-top: 10px;
+        padding-right: 12px;
+    }
+
+    .become p {
+        font-size: 13px;
+        margin-top: 15px;
+        white-space: nowrap;
+    }
+
+    .investor {
+        margin-left: 5px;
+        margin-top: 10px;
+        padding-right: 5px;
+    }
+
+    .investor p {
+        font-size: 13px;
+        margin-top: 15px;
+        white-space: nowrap;
+    }
+
+
+    /* Main background */
+    .signUpPage {
+        width: 100%;
+        min-height: 1000px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+
+    /* Signup card */
+    .mainPage {
+        width: 430px;
+        height: 630px;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .mainPage img {
+        width: 430px;
+        height: 210px;
+    }
+
+
+    /* Signup details */
+    .signUpdetails {
+        margin-left: 40px;
+        margin-top: 45px;
+    }
+
+    .signUpdetails h3 {
+        font-size: 21px;
+    }
+
+    .signUpdetails input {
+        font-size: 17px;
+    }
+
+    .signUpdetails button {
+        width: 330px;
+        height: 48px;
+        font-size: 19px;
+        margin-top: 50px;
+    }
+
+
+    /* Terms & Conditions */
+    .conditions {
+        left: 90px;
+        top: 550px;
+        font-size: 13px;
+    }
+
+
+    /* Error message */
+    #numberError {
+        font-size: 12px;
+        padding-left: 75px;
+    }
+
+}
+
+/* ================================= */
+/* 768px TO 426px RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 768px) and (min-width: 426px) {
+
+    /* Header */
+    .header {
+        width: 100%;
+        gap: 5px;
+        padding: 0 15px 12px;
+        align-items: center;
+    }
+
+    .meeshologo {
+        width: 125px;
+        height: 34px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .searchbar {
+        width: 280px;
+        height: 40px;
+        margin-left: 5px;
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .become {
+        margin-left: 5px;
+        margin-top: 10px;
+        padding-right: 8px;
+    }
+
+    .become p {
+        font-size: 11px;
+        margin-top: 15px;
+        white-space: nowrap;
+    }
+
+    .investor {
+        margin-left: 3px;
+        margin-top: 10px;
+        padding-right: 3px;
+    }
+
+    .investor p {
+        font-size: 11px;
+        margin-top: 15px;
+        white-space: nowrap;
+    }
+
+
+    /* Main background */
+    .signUpPage {
+        width: 100%;
+        min-height: 900px;
+        height: auto;
+        padding: 30px 15px;
+    }
+
+
+    /* Signup card */
+    .mainPage {
+        width: 100%;
+        max-width: 400px;
+        height: 600px;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    .mainPage img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    /* Signup details */
+    .signUpdetails {
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .signUpdetails h3 {
+        font-size: 20px;
+    }
+
+    .signUpdetails span {
+        font-size: 13px;
+    }
+
+    .signUpdetails input {
+        width: 270px;
+        font-size: 16px;
+    }
+
+    .signUpdetails button {
+        width: 320px;
+        height: 46px;
+        font-size: 18px;
+        margin-top: 45px;
+    }
+
+
+    /* Terms & Conditions */
+    .conditions {
+        left: 70px;
+        top: 520px;
+        font-size: 12px;
+    }
+
+
+    /* Error message */
+    #numberError {
+        font-size: 12px;
+        padding-left: 65px;
+    }
+
+}
+
+/* ================================= */
+/* 425px TO 321px RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 426px) and (min-width: 319px) {
+
+    /* Header */
+    .header {
+        width: 100%;
+        padding: 0 10px 12px;
+        gap: 5px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .meeshologo {
+        width: 90px;
+        height: 30px;
+        margin-left: 5;
+        margin-top: 15px;
+    }
+
+    .searchbar {
+        width: 150px;
+        height: 36px;
+        margin-left: 10px;
+        margin-top: 15px;
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .become,
+    .investor {
+        display: none;
+    }
+
+
+    /* Main background */
+    .signUpPage {
+        width: 100%;
+        min-height: 750px;
+        height: auto;
+        padding: 25px 12px;
+
+    }
+
+
+    /* Signup card */
+    .mainPage {
+        width: 100%;
+        max-width: 400px;
+        height: 580px;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0 auto;
+        border-radius: 12px;
+        
+    }
+
+    .mainPage img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    /* Signup details */
+    .signUpdetails {
+        width: calc(100% - 50px);
+        margin-left: 25px;
+        margin-top: 35px;
+    }
+
+    .signUpdetails h3 {
+        font-size: 18px;
+        white-space: nowrap;
+        margin-bottom: 20px;
+    }
+
+    .signUpdetails span {
+        font-size: 12px;
+    }
+
+    .signUpdetails p {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .signUpdetails input {
+        width: calc(100% - 85px);
+        font-size: 15px;
+    }
+
+    .signUpdetails button {
+        width: 100%;
+        height: 44px;
+        font-size: 17px;
+        margin-top: 45px;
+    }
+
+
+    /* Terms & Conditions */
+    .conditions {
+        width: 90%;
+        left: 5%;
+        top: 505px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+
+    /* Error message */
+    #numberError {
+        font-size: 11px;
+        padding-left: 5px;
+    }
+
+}

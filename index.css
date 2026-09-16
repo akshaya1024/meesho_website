@@ -1,0 +1,2592 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    color: rgba(0, 0, 0, 0.742);
+}
+.headerSection{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: white;
+}
+.header{
+    display: flex;
+    padding-bottom: 13px;
+    border-bottom: 1.5px solid rgba(62, 2, 62, 0.231);
+    
+}
+.header a{
+    text-decoration: none;
+}
+.meeshologo{
+    height: 38px;
+    width: 180px;
+    margin-left: 50px;
+    margin-top: 15px;
+    
+}
+.searchbar{
+    height: 45px;
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+.search-wrapper {
+    position: relative;
+}
+.search-suggestions {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 99999;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    display: none;
+}
+
+.search-suggestion {
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-suggestion:hover {
+    background-color: #f5f5f5;
+}
+.becomeSupplier{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+    color: rgba(0, 0, 0, 0.68);
+   
+}
+.becomeSupplier a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.742);
+}
+
+.investorRelations{
+    height: 40px;
+    width: 110px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border-left:1px solid rgba(0, 0, 0, 0.189) ;
+    border-right:1px solid rgba(0, 0, 0, 0.189) ;
+    color: rgba(0, 0, 0, 0.68); 
+    padding-left: 20px;
+    
+}
+
+.profile{
+  
+    height: 40px;
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.68); 
+    text-decoration: none;
+    position: relative;
+
+}
+.profile:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.profile:hover .profile-menu {
+    display: block;
+}
+
+.profile span{
+    margin-left: 8px;
+}
+.profile-menu{
+    position: absolute;
+    display: none;
+    height: 270px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+    left: -100px;
+    
+    border: 1px solid black;
+}
+
+.helloUser{
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.616);
+    margin-right: 30px;
+    padding-top: 10px;
+}
+.helloUser p{
+    font-size: 18px;
+    padding-left: 8px;
+}
+.helloUser span{
+    font-size: 13px;
+
+    color: rgba(128, 128, 128, 0.906);
+    
+}
+.helloUser button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(186, 6, 186);
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.helloUser button a {
+    text-decoration: none;
+    color: white;
+}
+.my-order{
+    margin-top: 10px;
+    display: flex;
+     border-bottom: 1.5px solid rgba(128, 128, 128, 0.616);
+    margin-right: 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.my-order p{
+    margin-top: -1px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.deleteMeeshoAccount p {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 20px;
+   
+   
+
+}
+.deleteMeeshoAccount a{
+     color: purple;
+     text-decoration: none;
+}
+
+.cart{
+    height: 30px;
+    width: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+    font-size: 17px;
+    color: rgba(128, 128, 128, 0.374); 
+}
+.cart:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.cart img{
+    height:30px;
+    width: 30px;
+}
+.cart p{
+    color:rgba(0, 0, 0, 0.705);
+}
+.parentnav{
+    margin-top: 20px;
+    
+    padding-bottom: 10px;
+}
+.navbar{
+    margin-left: 30px;
+    padding-bottom: 5px;
+   
+}
+.navbar:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.firstnavbar{
+    margin-left: 120px;
+    padding-bottom: 5px;
+}
+.firstnavbar:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.backgroundImage{
+    background-image: url("https://images.meesho.com/images/marketing/1787227877932.webp");
+    height: 360px;
+    width:100%;
+    background-size: cover;
+    margin-top: 20px;
+
+}
+.meeshobanner{
+    padding-left: 950px;
+    padding-top: 100px;
+}
+.smartShopping{
+    color: white;
+}
+.trusted{
+    color: white;
+    margin-top: 20px;
+}
+.shopnowBtn{
+    
+    height: 60px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(122, 2, 135);
+    background-color: white;
+    font-size: 24px;
+    margin-top: 20px;
+   
+}
+.shopnowBtn a{
+    text-decoration: none;
+    color:rgb(122, 2, 135) ;
+}
+.features{
+    height: 70px;
+    width: 100%;
+    background-color:rgba(128, 0, 128, 0.080);
+    position: relative;
+}
+.innerdiv{
+    position: absolute;
+    border: 1px solid rgba(128, 0, 128, 0.265);
+    height: 45px;
+    width: 97%;
+    background-color: white;
+    left: 20px;
+    top: 12px;
+    border-radius: 5px;
+    display: flex;
+}
+.easyReturn{
+    font-size: 13px;
+    color: black;
+    margin-left: 350px;
+    margin-top: 10px;
+ }
+ 
+
+.easyReturn img{
+    height: 20px;
+    width: 20px;
+    
+   
+}
+.cashOnDelivery{
+    font-size: 13px;
+    color: black;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-right: 2px solid rgba(128, 0, 128, 0.153);
+    border-left: 2px solid rgba(128, 0, 128, 0.153);
+    width: 200px;
+    padding-left: 30px;
+}
+.cashOnDelivery img{
+    height: 20px;
+    width: 20px;
+}
+.lowest-price{
+    font-size: 13px;
+    color: black;
+    margin-left: 60px;
+     margin-top: 10px;
+}
+.lowest-price img{
+    height: 20px;
+    width: 20px;
+}
+.options{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    gap: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+.secondOptions{
+    transition: transform 0.3s ease;
+    height: 100px;
+}
+.secondOptions:hover{
+    transform: translatey(-20px);
+}
+.firstOptions{
+    margin-left: 60px;
+    transition: transform 0.3s ease;
+}
+.firstOptions:hover{
+    transform: translatey(-20px);
+}
+.goldProductItems{
+    background-image: url("https://images.meesho.com/images/marketing/1744698265981.webp");
+    height: 480px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+.goldProductItems button{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    height: 50px;
+    width: 140px;
+    color: #ebcb75;
+    border: 1px solid #ebcb75;
+    background-color: #351301c1;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.goldProductItems button a {
+    text-decoration: none;
+    color: #ebcb75;
+}
+.goldProductItems img{
+    height: 150px;
+    width: 120px;
+    margin-left: 600px;
+}
+.image1{
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+.image2{
+    position: absolute;
+    left: 380px;
+    top: 30px;
+}
+.image3{
+    position: absolute;
+    left: 200px;
+    top: 230px;
+}
+.image4{
+    position: absolute;
+    left: 380px;
+    top: 230px;
+}
+.originalBrand{
+    margin-top: 20px;
+    margin-bottom:50px;
+}
+.originalBrand span{
+    font-size: 30px;
+    margin-left: 70px;
+    
+   
+    color: black;
+}
+.originalBrand img{
+    height:20px;
+    width: 20px;
+    
+
+}
+.originalBrand a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 800px;
+    color: rgba(128, 0, 128, 0.991);
+}
+.originalBrandImages{
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    gap: 30px;
+    display: flex;
+}
+.originalBrandImages1{
+    margin-left: 70px;
+}
+.marquee{
+    height: 180px;
+    width: 100%;
+    background-color:rgba(128, 0, 128, 0.080);
+    margin-top: 30px;
+    
+}
+.marqueeImage{
+    height: 100px;
+    width: 160px;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-left: 30px;
+    
+
+}
+.marqueeImage:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+.marqueeImage:hover{
+    cursor: pointer;
+}
+
+.marqueeImageBata{
+    background-color: white;
+    height: 100px;
+    width: 160px;
+    margin-left: 30px;
+}
+
+.discount{
+    background-image: url("https://images.meesho.com/images/marketing/1762433553672.webp");
+    height: 350px;
+    width: 1262px;
+    background-size: cover;
+    margin-bottom: 50px;
+    position: relative;
+}
+.downloadNow{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    color: rgb(83, 1, 83);
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 50px;
+    top: 240px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.trendingNow{
+    
+    position: absolute;
+    left: 480px;
+    top: 40px;
+}
+
+.trendingNow img{
+    height: 200px;
+    width: 150px;
+     margin-bottom: 10px;
+}
+.trendingNow button{
+    
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    color: rgb(83, 1, 83) ;
+    border: 1px solid #ebcb75;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f7ebccf1;
+    margin-left: 10px;
+}
+.budgetNow{
+    
+    position: absolute;
+    left: 660px;
+    top: 40px;
+}
+
+.budgetNow img{
+    height: 200px;
+    width: 150px;
+     margin-bottom: 10px;
+}
+.budgetNow button{
+    
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    color: rgb(83, 1, 83) ;
+    border: 1px solid #ebcb75;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f7ebccf1;
+    margin-left: 10px;
+}
+.topRated{
+    
+    position: absolute;
+    left: 840px;
+    top: 40px;
+}
+
+.topRated img{
+    height: 200px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.topRated button{
+    margin-left: 10px;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    color: rgb(83, 1, 83) ;
+    border: 1px solid #ebcb75;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #f7ebccf1;
+
+}
+.dailyEssential{
+    
+    position: absolute;
+    left: 1020px;
+    top: 40px;
+}
+
+.dailyEssential img{
+    height: 200px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.dailyEssential button{
+    
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    color: rgb(83, 1, 83) ;
+    border: 1px solid #ebcb75;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #f7ebccf1;
+    margin-left: 10px;   
+}
+.productforyou{
+    width: 300px;
+    margin-top: 40px;
+    
+    border: 2px solid black;
+    
+    
+}
+
+.mainPage{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.suggestion{
+    height: 400px;
+    width: 230px;
+    border: 1px solid rgba(128, 128, 128, 0.228);
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.suggestion img{
+    height: 230px;
+    width: 180px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.suggestion h2{
+    color:#333;
+}
+.suggestion p{
+    margin-bottom: 5px;
+    color: rgba(128, 128, 128, 0.619);
+    margin-top: 8px;
+}
+.suggestion button{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: rgba(0, 100, 0, 0.815);
+    color: white;
+    border: none;
+}
+.suggestion span{
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.769);
+}
+.product-topic{
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+
+.products {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 10px 20px;
+    align-content: flex-start;
+}
+
+.product-card {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+.product-card a{
+    text-decoration: none;
+}
+.suggestion-box{
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    /* height: 8200px; */
+    width: 280px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.meesho-address{ 
+    
+    background-color: rgba(230, 230, 250, 0.361);
+    height: 4000px;
+    padding-top: 100px;
+    margin-top: 30px;
+    width: 100%;
+   
+}
+.flex-add{
+    display: flex;
+     gap: 20px;
+}
+.trustedByIndians{
+    margin-left: 30px;
+    width: 380px;
+}
+.trustedByIndians img{
+    height: 50px;
+    width: 170px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.trustedByIndians h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.trustedByIndians p{
+    margin-bottom: 20px;
+}
+.careers{
+    font-size: 18px;
+    
+}
+.careers a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.651);
+    
+}
+.reachOut{
+    width: 200px;
+}
+.reachOut img{
+    margin-left: 10px;
+}
+.reachOut h3{
+    margin-left: 10px;
+}
+.contactUs p{
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.about-meesho{
+    background-color: white;
+    margin-left: 20px;
+    width: 97%;
+    border: 2px solid lavender;
+    border-radius: 10px;
+    padding-left: 20px;
+    
+}
+.affordable-fashion h4{
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.235);
+    width: 98%;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.affordable-fashion h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.affordable-fashion p{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.516);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.meeshoApp h2{
+    color: rgba(128, 0, 128, 0.815);
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+.meeshoApp h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.meeshoApp h4{
+    color: rgba(128, 0, 128, 0.815);
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.meeshoApp p{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.meeshoApp a{
+     color: rgba(128, 0, 128, 0.815);
+     font-size: 17px;
+     margin-bottom: 20px;
+}
+.meeshoApp span{
+    color: rgba(128, 0, 128, 0.815);
+     font-size: 17px;
+}
+
+#loadingScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.411);
+    z-index: 99999;
+
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    font-size: 50px;
+    color: purple;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+
+#deletePopup {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green ;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 99999;
+}
+
+
+/* ==========================================
+   LAPTOP RESPONSIVE
+   1024px TO 1440px
+   ========================================== */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    /* ==========================================
+   HEADER RESPONSIVE
+   1024px - 1440px
+   ========================================== */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px 13px 20px;
+        gap: 0;
+    }
+
+    /* LOGO */
+    .meeshologo {
+        width: 150px;
+        height: auto;
+        margin: 15px 30px 0 30px;
+        flex-shrink: 0;
+    }
+
+    /* SEARCH */
+    .search-wrapper {
+        flex: 1;
+        min-width: 250px;
+        max-width: 500px;
+    }
+
+    .searchbar {
+        width: 100%;
+        height: 45px;
+        margin: 15px 0 0 0;
+    }
+
+    /* SUPPLIER */
+    .becomeSupplier {
+        width: auto;
+        height: auto;
+        margin: 5px 10px 0 15px;
+        flex-shrink: 0;
+    }
+
+    /* INVESTOR */
+    .investorRelations {
+        width: 120px;
+        height: 40px;
+        margin: 15px 10px 0 10px;
+        padding-left: 12px;
+        flex-shrink: 0;
+    }
+
+    /* PROFILE */
+    .profile {
+        width: 65px;
+        height: 40px;
+        margin: 15px 10px 0 10px;
+        flex-shrink: 0;
+    }
+
+    /* CART */
+    .cart {
+        width: 40px;
+        height: 40px;
+        margin: 0px 0 0 30px;
+        flex-shrink: 0;
+    }
+
+
+    /* ==========================================
+       NAVBAR
+       ========================================== */
+
+    .parentnav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 38px;
+
+        margin-top: 15px;
+        padding: 0 20px 10px;
+
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .parentnav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+}
+
+    /* ---------- SEARCH SUGGESTION ---------- */
+
+    .search-suggestions {
+        max-width: 100%;
+    }
+
+
+    /* ---------- BANNER ---------- */
+
+    .backgroundImage {
+        width: 100%;
+        height: 340px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .meeshobanner {
+        padding-left: 70%;
+        padding-top: 90px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .features {
+        width: 100%;
+    }
+
+    .innerdiv {
+        width: 94%;
+        left: 3%;
+    }
+
+    .easyReturn {
+        margin-left: auto;
+    }
+
+    .cashOnDelivery {
+        margin-left: 30px;
+    }
+
+    .lowest-price {
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+
+    /* ---------- CATEGORY OPTIONS ---------- */
+
+    .options {
+        width: 100%;
+        gap: 25px;
+        padding: 0 30px;
+    }
+
+    .firstOptions {
+        margin-left: 0;
+    }
+
+
+    /* ---------- GOLD SECTION ---------- */
+
+    .goldProductItems {
+        width: 100%;
+        max-width: 1250px;
+        height: 450px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .goldProductItems button {
+        left: 16%;
+        top: 375px;
+    }
+
+    .goldProductItems .image1 {
+        left: 16%;
+    }
+
+    .goldProductItems .image2 {
+        left: 30%;
+    }
+
+    .goldProductItems .image3 {
+        left: 16%;
+        top: 215px;
+    }
+
+    .goldProductItems .image4 {
+        left: 30%;
+        top: 215px;
+    }
+
+
+    /* ---------- ORIGINAL BRANDS ---------- */
+
+    .originalBrand {
+        width: 100%;
+    }
+
+    .originalBrand span {
+        margin-left: 40px;
+    }
+
+    .originalBrand a {
+        margin-left: 55%;
+    }
+
+    .originalBrandImages {
+        gap: 20px;
+        padding: 0 40px;
+    }
+
+    .originalBrandImages1 {
+        margin-left: 0;
+    }
+
+
+    /* ---------- MARQUEE ---------- */
+
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* ---------- DISCOUNT ---------- */
+
+    .discount {
+        width: 100%;
+        max-width: 1262px;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+    }
+
+    .downloadNow {
+        left: 5%;
+    }
+
+    .trendingNow {
+        left: 38%;
+    }
+
+    .budgetNow {
+        left: 53%;
+    }
+
+    .topRated {
+        left: 68%;
+    }
+
+    .dailyEssential {
+        left: 83%;
+    }
+
+
+    /* ---------- PRODUCT TITLE ---------- */
+
+    .product-topic {
+        margin-left: 40px;
+    }
+
+
+    /* ---------- PRODUCT CONTAINER ---------- */
+
+    .main-container {
+        width: 100%;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .products {
+        width: 100%;
+        padding: 10px 30px;
+        gap: 20px;
+    }
+
+
+    /* ---------- PRODUCT CARD ---------- */
+
+    .product-card {
+        width: calc(25% - 15px);
+    }
+
+    .suggestion {
+        width: 100%;
+        height: 390px;
+        padding-left: 15px;
+    }
+
+    .suggestion img {
+        width: calc(100% - 15px);
+        height: 220px;
+        object-fit: cover;
+        margin-left: 0;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .meesho-address {
+        width: 100%;
+    }
+
+    .flex-add {
+        width: 100%;
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .trustedByIndians {
+        margin-left: 0;
+    }
+
+    .about-meesho {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+}
+
+/* ==========================================
+   TABLET / SMALL LAPTOP RESPONSIVE
+   768px - 1024px
+   3 PRODUCTS PER ROW
+   ========================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* ======================================
+       HEADER
+       ====================================== */
+
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 15px 12px;
+    }
+
+    .meeshologo {
+        width: 130px;
+        height: auto;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 15px;
+        flex-shrink: 0;
+    }
+
+    .search-wrapper {
+        flex: 1;
+        min-width: 200px;
+        max-width: 400px;
+    }
+
+    .searchbar {
+        width: 100%;
+        height: 42px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .becomeSupplier {
+        width: auto;
+        height: auto;
+        margin-left: 12px;
+        margin-top: 5px;
+        flex-shrink: 0;
+    }
+
+    .investorRelations {
+        width: 100px;
+        height: 40px;
+        margin-left: 12px;
+        padding-left: 10px;
+        flex-shrink: 0;
+    }
+
+    .profile {
+        width: 60px;
+        margin-left: 12px;
+        flex-shrink: 0;
+    }
+
+    .cart {
+        width: 40px;
+        margin-left: 12px;
+        margin-top: -15px;
+        flex-shrink: 0;
+    }
+
+
+    /* ======================================
+       NAVBAR
+       ====================================== */
+
+    .parentnav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 18px;
+        padding: 0 20px 10px;
+
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .parentnav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+
+
+    /* ======================================
+       BANNER
+       ====================================== */
+
+    .backgroundImage {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .meeshobanner {
+        padding-left: 68%;
+        padding-top: 75px;
+    }
+
+    .smartShopping {
+        font-size: 28px;
+    }
+
+    .trusted {
+        font-size: 28px;
+    }
+
+    /* ======================================
+       FEATURES
+       ====================================== */
+
+    .innerdiv {
+        width: 94%;
+        left: 3%;
+    }
+
+    .easyReturn {
+        margin-left: auto;
+    }
+
+    .cashOnDelivery {
+        margin-left: 25px;
+        width: 180px;
+        padding-left: 20px;
+    }
+
+    .lowest-price {
+        margin-left: 25px;
+        margin-right: auto;
+    }
+
+
+    /* ======================================
+       CATEGORY OPTIONS
+       ====================================== */
+
+    .options {
+        width: 100%;
+        gap: 25px;
+        padding: 0 30px;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .options::-webkit-scrollbar {
+        display: none;
+    }
+
+    .firstOptions {
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+
+    .secondOptions {
+        flex-shrink: 0;
+    }
+
+
+    /* ======================================
+       GOLD PRODUCT SECTION
+       ====================================== */
+
+    .goldProductItems {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .goldProductItems button {
+        top: 330px;
+        left: 15%;
+    }
+
+    .goldProductItems .image1 {
+        left: -15%;
+        top: 30px;
+    }
+
+    .goldProductItems .image2 {
+        left: 2%;
+        top: 30px;
+    }
+
+    .goldProductItems .image3 {
+        left: -15%;
+        top: 190px;
+    }
+
+    .goldProductItems .image4 {
+        left: 2%;
+        top: 190px;
+    }
+
+
+    /* ======================================
+       ORIGINAL BRANDS
+       ====================================== */
+
+    .originalBrand span {
+        margin-left: 40px;
+    }
+
+    .originalBrand a {
+        margin-left: 45%;
+    }
+
+    .originalBrandImages {
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    .originalBrandImages1 {
+        margin-left: 0;
+    }
+
+
+    /* ======================================
+       DISCOUNT SECTION
+       ====================================== */
+
+    .discount {
+        width: 100%;
+        height: 320px;
+       
+    }
+
+    .downloadNow {
+        left: 5%;
+        top: 220px;
+    }
+
+    .trendingNow {
+        left: 45%;
+        top: 35px;
+    }
+
+    .budgetNow {
+        left: 64%;
+        top: 35px;
+    }
+
+    .topRated {
+        left: 82%;
+        top: 35px;
+    }
+
+    .dailyEssential {
+        display: none;
+    }
+
+
+    /* ======================================
+       PRODUCT TITLE
+       ====================================== */
+
+    .product-topic {
+        margin-left: 30px;
+        font-size: 28px;
+    }
+
+
+    /* ======================================
+       PRODUCT CONTAINER
+       ====================================== */
+
+    .main-container {
+        width: 100%;
+        margin-left: 0;
+        gap: 0;
+    }
+
+    .products {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 10px 20px;
+
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+
+    /* ======================================
+       ⭐ 3 PRODUCTS IN ONE ROW ⭐
+       ====================================== */
+
+    .product-card {
+        width: calc((100% - 40px) / 3);
+        box-sizing: border-box;
+    }
+
+    .suggestion {
+        width: 100%;
+        height: 390px;
+        padding-left: 12px;
+    }
+
+    .suggestion img {
+        width: calc(100% - 12px);
+        height: 210px;
+        object-fit: cover;
+        margin-left: 0;
+    }
+
+    .suggestion p {
+        font-size: 14px;
+    }
+
+    .suggestion h2 {
+        font-size: 20px;
+    }
+
+
+    /* ======================================
+       FOOTER
+       ====================================== */
+
+    .meesho-address {
+        width: 100%;
+    }
+
+    .flex-add {
+        width: 100%;
+        padding: 0 25px;
+        gap: 25px;
+    }
+
+    .trustedByIndians {
+        margin-left: 0;
+    }
+
+    .about-meesho {
+        width: calc(100% - 40px);
+    }
+
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+   375px - 425px
+   2 PRODUCTS PER ROW
+   ========================================== */
+
+@media (min-width: 375px) and (max-width: 426px) {
+
+    /* Header */
+    .header {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Logo - First row */
+    .header > div:first-child {
+        width: 30%;
+    }
+
+    .meeshologo {
+        width: 95px;
+        height: auto;
+        margin: 5px 0 5px 5px;
+    }
+
+    /* Search - First row */
+    .search-wrapper {
+        width: 70%;
+        flex: none;
+    }
+
+    .searchbar {
+        width: 100%;
+        height: 40px;
+        margin: 5px 0;
+        font-size: 11px;
+    }
+
+
+    /* ==============================
+       INVESTOR HIDE
+       ============================== */
+
+    .header > div:nth-child(4) {
+        display: none;
+    }
+
+
+    /* ==============================
+       SECOND ROW
+       ============================== */
+
+    .header > div:nth-child(3),
+    .header > div:nth-child(5),
+    .header > div:nth-child(6) {
+        width: auto;
+        margin-top: 12px;
+    }
+
+    /* Supplier */
+    .becomeSupplier {
+        width: auto;
+        height: auto;
+        margin: 0 15px 0 25px;
+        font-size: 12px;
+        white-space: nowrap; 
+        border-right: 1.5px solid rgba(128, 0, 128, 0.715);
+        padding: 5px 5px;
+        padding-right:20px ;
+    }
+
+    /* Profile */
+    .profile {
+        width: auto;
+        height: auto;
+        margin: 0 0;
+        font-size: 13px;
+        padding: 5px 30px 5px 0;
+
+        border-right: 1.5px solid purple;
+    }
+
+    /* Cart */
+    .cart {
+        width: auto;
+        height: auto;
+        margin: 0 20px;
+        font-size: 13px;
+        
+    }
+
+    .cart img {
+        width: 22px;
+        height: 22px;
+        
+    }
+
+
+    /* Navbar */
+    .parentnav {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        padding: 8px 15px 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .parentnav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+
+
+    /* Products - 2 per row */
+    .main-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .products {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .product-card {
+        width: calc((100% - 10px) / 2);
+    }
+
+
+
+    /* ======================================
+       BANNER
+       ====================================== */
+
+    .backgroundImage {
+        width: 100%;
+        height: 180px;
+
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+     .meeshobanner {
+        /* padding-left: 55%;
+        padding-top: 35px; */
+        display: none;
+    } 
+
+   
+
+    /* ======================================
+       FEATURES
+       ====================================== */
+
+    .features {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .innerdiv {
+        position: static;
+        width: 94%;
+        height: 45px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .easyReturn,
+    .cashOnDelivery,
+    .lowest-price {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        border: none;
+        font-size: 10px;
+    }
+
+    .easyReturn img,
+    .cashOnDelivery img,
+    .lowest-price img {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    /* ======================================
+       CATEGORY OPTIONS
+       ====================================== */
+
+    .options {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .options::-webkit-scrollbar {
+        display: none;
+    }
+
+    .firstOptions {
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+
+    .secondOptions {
+        flex-shrink: 0;
+    }
+
+
+    /* ======================================
+       GOLD SECTION
+       ====================================== */
+
+    .goldProductItems {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 30px;
+
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+    .goldProductItems button {
+        top: 225px;
+        left: 40%;
+        height: 35px;
+        width: 90px;
+        font-size: 12px;
+    }
+
+    .goldProductItems .image1 {
+       display: none;
+    }
+
+    .goldProductItems .image2 {
+       display: none;
+    }
+
+    .goldProductItems .image3 {
+        display: none;
+    }
+
+    .goldProductItems .image4 {
+       display: none;
+    }
+
+
+    /* ======================================
+       ORIGINAL BRANDS
+       ====================================== */
+
+    .originalBrand {
+        margin-bottom: 25px;
+    }
+
+    .originalBrand span {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .originalBrand img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .originalBrand a {
+        margin-left: 40px;
+        font-size: 13px;
+    }
+
+    .originalBrandImages {
+        display: flex;
+        gap: 15px;
+        padding: 0 20px;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .originalBrandImages::-webkit-scrollbar {
+        display: none;
+    }
+
+    .originalBrandImages1 {
+        margin-left: 0;
+    }
+
+
+    /* ======================================
+       MARQUEE
+       ====================================== */
+
+    .marquee {
+        width: 100%;
+        height: 150px;
+    }
+
+    .marqueeImage,
+    .marqueeImageBata {
+        width: 150px;
+        height: 70px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+
+    /* ======================================
+       DISCOUNT
+       ====================================== */
+
+    .discount {
+        width: 100%;
+        height: 220px;
+
+        background-size: cover;
+        /* background-position: center; */
+        margin-bottom: 30px;
+    }
+
+    .downloadNow {
+        width: 110px;
+        height: 35px;
+        left: 50px;
+        top: 165px;
+        font-size: 13px;
+    }
+
+    .trendingNow {
+        left: 70%;
+        top: 0px;
+    }
+
+    .budgetNow {
+        left: 70%;
+        top: 110px;
+    }
+
+    .topRated,
+    .dailyEssential {
+        display: none;
+    }
+
+    .trendingNow img,
+    .budgetNow img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .trendingNow button,
+    .budgetNow button {
+        width: 65px;
+        height: 20px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+
+    /* ======================================
+       PRODUCT TITLE
+       ====================================== */
+
+    .product-topic {
+        margin-left: 15px;
+        font-size: 22px;
+    }
+
+
+    /* ======================================
+       PRODUCT CONTAINER
+       ====================================== */
+
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .products {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 10px;
+
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+
+    /* ======================================
+       ⭐ 2 PRODUCTS PER ROW ⭐
+       ====================================== */
+
+    .product-card {
+        width: calc((100% - 10px) / 2);
+        box-sizing: border-box;
+    }
+
+    .suggestion {
+        width: 100%;
+        height: 330px;
+        padding-left: 8px;
+        border-radius: 8px;
+    }
+
+    .suggestion img {
+        width: calc(100% - 8px);
+        height: 170px;
+
+        object-fit: cover;
+
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .suggestion p {
+        font-size: 12px;
+        line-height: 16px;
+
+        margin-top: 6px;
+        margin-bottom: 4px;
+    }
+
+    .suggestion h2 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .suggestion button {
+        width: 48px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .suggestion span {
+        font-size: 9px;
+    }
+
+
+    /* ======================================
+       FOOTER
+       ====================================== */
+
+    .meesho-address {
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .flex-add {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .trustedByIndians {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .reachOut {
+        width: 100%;
+    }
+
+    .about-meesho {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+}
+/* =========================================
+   MOBILE RESPONSIVE - 320px to 374px
+   ========================================= */
+@media (min-width: 320px) and (max-width: 374px) {
+
+    .header {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 45px 38px;
+
+        padding: 5px;
+        margin: 0;
+        gap: 0;
+        align-items: center;
+    }
+
+    .header > div:first-child {
+        grid-column: 1;
+        grid-row: 1;
+
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .meeshologo {
+        width: 75px;
+        height: auto;
+        margin: 0 0 0 5px;
+    }
+
+    .search-wrapper {
+        grid-column: 2 / 4;
+        grid-row: 1;
+
+        width: 100%;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .searchbar {
+        width: 100%;
+        height: 35px;
+        margin: 0;
+        padding: 0 7px;
+        font-size: 9px;
+    }
+
+    /* Investor */
+    .header > div:nth-child(4) {
+        display: none;
+    }
+
+    /* Become Supplier */
+    .header > div:nth-child(3) {
+        grid-column: 1;
+        grid-row: 2;
+
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .becomeSupplier {
+        width: 100%;
+        margin: 20px 0 0 10px;
+        padding: 5px 5px;
+        font-size: 11px;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    /* Profile */
+    .header > div:nth-child(5) {
+        grid-column: 2;
+        grid-row: 2;
+
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .profile {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    /* Cart */
+    .header > div:nth-child(6) {
+        grid-column: 3;
+        grid-row: 2;
+
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+.cart a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: -20px;
+}
+
+.cart img {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    margin-top: -3px;
+}
+
+.cart p {
+    margin: 0;
+    font-size: 12px;
+}
+
+    /* Navbar */
+    .parentnav {
+        width: 100%;
+        height: 38px;
+
+        margin: 0;
+        padding: 8px 10px;
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        gap: 15px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin: 0;
+        padding: 0;
+        font-size: 9px;
+        flex-shrink: 0;
+    }
+
+
+
+    /* ================= MAIN BANNER ================= */
+
+    .backgroundImage {
+        width: 100% ;
+        max-width: 100% ;
+        min-width: 0 ;
+
+        height: 145px ;
+
+        margin: 8px 0 0 0 ;
+
+        background-size: cover;
+        /* background-position: center !important; */
+    }
+    .meeshobanner{
+        display: none;
+    }
+
+
+    /* ================= FEATURES ================= */
+
+    .features {
+        width: 100% ;
+        max-width: 100% ;
+
+        height: 55px ;
+
+        padding: 5px 0 ;
+        margin: 0 ;
+    }
+
+    .innerdiv {
+        position: static ;
+
+        width: 95% ;
+        height: 45px ;
+
+        margin: auto ;
+
+        display: flex ;
+        justify-content: space-around ;
+        align-items: center ;
+    }
+
+    .easyReturn,
+    .cashOnDelivery,
+    .lowest-price {
+        width: 33.33% ;
+
+        margin: 0 ;
+        padding: 0;
+
+        border: none ;
+
+        font-size: 7px ;
+        text-align: center;
+
+        white-space: nowrap;
+    }
+
+    .easyReturn img,
+    .cashOnDelivery img,
+    .lowest-price img {
+        width: 13px ;
+        height: 13px ;
+    }
+
+
+    /* ================= CATEGORY OPTIONS ================= */
+
+    .options {
+        width: 100% ;
+        max-width: 100% ;
+
+        display: flex ;
+        flex-wrap: nowrap ;
+
+        gap: 12px ;
+
+        margin: 20px 0 !important;
+        padding: 0 10px !important;
+
+        overflow-x: auto !important;
+        scrollbar-width: none;
+    }
+
+    .options::-webkit-scrollbar {
+        display: none;
+    }
+
+    .firstOptions,
+    .secondOptions {
+        flex-shrink: 0 !important;
+        margin: 0 !important;
+    }
+
+    .options img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .options p {
+        font-size: 8px !important;
+        text-align: center;
+    }
+
+
+    /* ================= GOLD BANNER ================= */
+
+    .goldProductItems {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        height: 190px !important;
+
+        margin: 0 0 20px 0 !important;
+
+        position: relative !important;
+
+        background-size: cover !important;
+        /* background-position: center !important; */
+
+        overflow: hidden !important;
+    }
+
+    /* IMPORTANT:
+       Remove old desktop positions */
+    .goldProductItems .image1,
+    .goldProductItems .image2,
+    .goldProductItems .image3,
+    .goldProductItems .image4 {
+        position: absolute !important;
+
+        width: 45px !important;
+        height: 55px !important;
+
+        margin: 0 !important;
+    }
+
+    .goldProductItems .image1 {
+        left: 60% !important;
+        top: 12px !important;
+    }
+
+    .goldProductItems .image2 {
+        left: 80% !important;
+        top: 12px !important;
+    }
+
+    .goldProductItems .image3 {
+        left: 60% !important;
+        top: 75px !important;
+    }
+
+    .goldProductItems .image4 {
+        left: 80% !important;
+        top: 75px !important;
+    }
+
+    .goldProductItems button {
+        position: absolute !important;
+
+        left: 30% !important;
+        top: 150px !important;
+
+        width: 65px !important;
+        height: 25px !important;
+
+        font-size: 9px !important;
+    }
+
+
+    /* ================= ORIGINAL BRANDS ================= */
+
+    .originalBrand {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 0 15px 0 !important;
+        padding: 0 10px !important;
+    }
+
+    .originalBrand span {
+        font-size: 16px !important;
+        margin-left: 0 !important;
+    }
+
+    .originalBrand img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .originalBrand a {
+        margin-left: 100px !important;
+        font-size: 9px !important;
+    }
+
+    .originalBrandImages {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        flex-wrap: nowrap !important;
+
+        gap: 8px !important;
+
+        padding: 0 10px !important;
+        margin: 0 !important;
+
+        overflow-x: auto !important;
+        scrollbar-width: none;
+    }
+
+    .originalBrandImages::-webkit-scrollbar {
+        display: none;
+    }
+
+    .originalBrandImages1 {
+        flex-shrink: 0 !important;
+        margin: 0 !important;
+    }
+
+
+    /* ================= MARQUEE ================= */
+
+    .marquee {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: 100px !important;
+
+        overflow: hidden !important;
+    }
+
+    .marqueeImage,
+    .marqueeImageBata {
+        width: 75px ;
+        height: 50px !;
+
+        margin-top: 10px !important;
+        margin-left: 5px !important;
+        margin-bottom: 10px;
+
+    }
+
+
+    /* ================= DISCOUNT ================= */
+
+    .discount {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        height: 170px !important;
+
+        margin: 0 0 20px 0 !important;
+
+        position: relative !important;
+
+        background-size: cover !important;
+        /* background-position: center !important; */
+
+        overflow: hidden !important;
+    }
+
+    .downloadNow {
+        width: 70px !important;
+        height: 25px !important;
+
+        left: 50px !important;
+        top: 130px !important;
+
+        font-size: 8px !important;
+    }
+
+    .trendingNow {
+        left: 60% !important;
+        top: 30px !important;
+    }
+
+    .budgetNow {
+        left: 80% !important;
+        top: 30px !important;
+    }
+
+    .topRated,
+    .dailyEssential {
+        display: none !important;
+    }
+
+    .trendingNow img,
+    .budgetNow img {
+        width: 45px !important;
+        height: 60px !important;
+    }
+
+    .trendingNow button,
+    .budgetNow button {
+        width: 50px !important;
+        height: 20px !important;
+
+        margin-left: 0 !important;
+
+        font-size: 6px !important;
+    }
+
+
+    /* ================= PRODUCT SECTION ================= */
+
+    .product-topic {
+        width: 100% !important;
+
+        margin: 12px 0 8px 10px !important;
+
+        font-size: 18px !important;
+    }
+
+    .main-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* EXACTLY 2 PRODUCTS PER ROW */
+
+    .products {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        padding: 8px !important;
+        margin: 0 !important;
+    }
+
+    .product-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+    }
+
+    .suggestion {
+        width: 100% !important;
+        height: 280px !important;
+
+        padding: 5px !important;
+
+        border-radius: 7px !important;
+    }
+
+    .suggestion img {
+        width: 100% !important;
+        height: 135px !important;
+
+        margin: 5px 0 0 0 !important;
+
+        object-fit: cover;
+    }
+
+    .suggestion p {
+        font-size: 9px !important;
+        line-height: 12px !important;
+    }
+
+    .suggestion h2 {
+        font-size: 14px !important;
+        margin: 3px 0 !important;
+    }
+
+    .suggestion button {
+        width: 40px !important;
+        height: 20px !important;
+
+        font-size: 8px !important;
+    }
+
+    .suggestion span {
+        font-size: 7px !important;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .meesho-address {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: auto !important;
+
+        padding-top: 25px !important;
+    }
+
+    .flex-add {
+        width: 100% ;
+
+        display: flex ;
+        flex-wrap: wrap ;
+
+        padding: 0 10px ;
+        gap: 10px ;
+    }
+
+    .trustedByIndians {
+        width: 100% ;
+        margin-left: 0 ;
+    }
+
+    .reachOut {
+        width: 100% ;
+    }
+
+    .about-meesho {
+        width: calc(100% - 20px) ;
+
+        margin-left: 10px ;
+        padding: 10px ;
+    }
+}

@@ -1,0 +1,913 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    color: rgba(0, 0, 0, 0.742);
+    background-color: white;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 80px;
+    padding-bottom: 13px;
+    border-bottom: 1.5px solid rgba(62, 2, 62, 0.231);
+}
+
+.header img {
+    height: 38px;
+    width: 180px;
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.main-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   PRODUCT DETAILS
+========================================= */
+
+.product-details {
+    margin-left: 20px;
+    width: 680px;
+    border-right: 1.5px solid rgba(128, 0, 128, 0.35);
+    margin-top: 20px;
+    min-height: 600px;
+    padding-right: 20px;
+}
+
+
+/* Product Details heading */
+
+.product-details > p {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* =========================================
+   EACH CART PRODUCT
+========================================= */
+
+.cart-product {
+    width: 100%;
+    min-height: 150px;
+
+    display: flex;
+    align-items: flex-start;
+
+    padding: 18px 20px;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+    border-radius: 4px;
+
+    margin-bottom: 12px;
+
+    background-color: white;
+}
+
+
+/* Product image */
+
+.cart-product img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    margin-right: 20px;
+}
+
+
+/* Product information */
+
+.cart-product > div {
+    flex: 1;
+}
+
+
+/* Product name */
+
+.cart-product p:first-child {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+
+/* Product price */
+
+.cart-product p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+
+/* Size and quantity */
+
+.cart-product span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+
+/* Remove */
+
+.cart-product .remove-product {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    color: rgba(0, 0, 0, 0.65);
+
+    cursor: pointer;
+}
+
+.cart-product .remove-product:hover {
+    color: purple;
+}
+
+
+/* =========================================
+   PRICE DETAILS
+========================================= */
+
+.price-details {
+    margin-top: 40px;
+    margin-left: 30px;
+
+    width: 360px;
+
+    padding-left: 0;
+}
+
+
+/* Price Details heading */
+
+.topics {
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+.topics span {
+    padding-left: 5px;
+}
+
+
+/* =========================================
+   PRODUCT PRICE
+========================================= */
+
+.price {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+
+    font-size: 17px;
+}
+
+.product-price {
+    color: rgba(128, 128, 128, 0.758);
+
+    border-bottom: 1.5px dotted gray;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   DISCOUNT
+========================================= */
+
+.discount {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+
+    color: green;
+
+    font-size: 17px;
+}
+
+.total-discount {
+    border-bottom: 1.5px dotted green;
+}
+
+#totalDiscount {
+    color: green;
+}
+/* =========================================
+   HR
+========================================= */
+
+.price-details hr {
+    border: none;
+
+    border-top: 1px solid rgba(128, 128, 128, 0.25);
+
+    margin: 5px 0 20px;
+}
+
+
+/* =========================================
+   ORDER TOTAL
+========================================= */
+
+.total {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+}
+
+.order-total {
+    margin-right: 0;
+}
+
+
+/* =========================================
+   GREEN DISCOUNT MESSAGE
+========================================= */
+
+.image-total {
+    height: 55px;
+    width: 340px;
+
+    margin-top: 10px;
+
+    background-color: rgba(0, 128, 0, 0.212);
+
+    color: green;
+
+    border-radius: 5px;
+
+    padding-left: 20px;
+    padding-top: 10px;
+
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Green icon/image */
+
+.image-total img {
+    height: 20px;
+    width: 20px;
+
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   CONTINUE MESSAGE
+========================================= */
+
+.continue p {
+    background-color: rgba(128, 0, 128, 0.112);
+
+    margin-top: 10px;
+
+    width: 340px;
+
+    font-size: 13px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CONTINUE BUTTON
+========================================= */
+
+.continue button {
+    height: 50px;
+
+    width: 340px;
+
+    background-color: rgb(163, 5, 163);
+
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 5px;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 0;
+}
+
+.continue button:hover {
+    background-color: rgb(145, 0, 145);
+}
+
+
+/* =========================================
+   SAFETY IMAGE
+   DO NOT CHANGE THE IMAGE
+========================================= */
+
+.last-image {
+    width: 340px;
+
+    text-align: center;
+}
+
+.last-image img {
+    height: 150px;
+    width: 300px;
+
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+/* =========================================
+   RESPONSIVE : 1025px TO 1440px
+========================================= */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    .header {
+        height: 80px;
+    }
+
+    .header img {
+        width: 170px;
+        height: 36px;
+        margin-left: 40px;
+    }
+
+
+    /* =====================================
+       MAIN CONTAINER
+    ===================================== */
+
+    .main-container {
+        width: 92%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+
+    /* =====================================
+       PRODUCT DETAILS
+    ===================================== */
+
+    .product-details {
+        width: 65%;
+        margin-left: 0;
+        padding-right: 20px;
+    }
+
+
+    /* =====================================
+       CART PRODUCT
+    ===================================== */
+
+    .cart-product {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .cart-product img {
+        width: 80px;
+        height: 80px;
+        margin-right: 18px;
+    }
+
+
+    /* =====================================
+       PRICE DETAILS
+    ===================================== */
+
+    .price-details {
+        width: 35%;
+        margin-left: 25px;
+        margin-top: 40px;
+    }
+
+
+    /* =====================================
+       PRICE BOX ELEMENTS
+    ===================================== */
+
+    .image-total {
+        width: 100%;
+    }
+
+    .continue p {
+        width: 100%;
+    }
+
+    .continue button {
+        width: 100%;
+    }
+
+    .last-image {
+        width: 100%;
+    }
+
+    .last-image img {
+        max-width: 100%;
+        width: 300px;
+        height: 150px;
+        object-fit: contain;
+    }
+}
+
+/* =========================================
+   RESPONSIVE : 768px TO 1024px
+========================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    .header {
+        height: 75px;
+    }
+
+    .header img {
+        width: 160px;
+        height: 35px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+
+    /* =====================================
+       MAIN CONTAINER
+    ===================================== */
+
+    .main-container {
+        width: 94%;
+        max-width: none;
+        margin: 0 auto;
+
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+
+    /* =====================================
+       PRODUCT DETAILS
+    ===================================== */
+
+    .product-details {
+        width: 62%;
+        margin-left: 0;
+        margin-top: 15px;
+        padding-right: 15px;
+        min-height: 550px;
+    }
+
+    .product-details > p {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    /* =====================================
+       CART PRODUCT
+    ===================================== */
+
+    .cart-product {
+        width: 100%;
+        min-height: 130px;
+        padding: 15px;
+    }
+
+    .cart-product img {
+        width: 75px;
+        height: 75px;
+        margin-right: 15px;
+    }
+
+    .cart-product p:first-child {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .cart-product p:nth-child(2) {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .cart-product span {
+        font-size: 13px;
+    }
+
+
+    /* =====================================
+       PRICE DETAILS
+    ===================================== */
+
+    .price-details {
+        width: 38%;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .topics {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+
+    /* =====================================
+       PRICE
+    ===================================== */
+
+    .price {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .product-price {
+        font-size: 15px;
+    }
+
+    .discount {
+        font-size: 15px;
+        padding-bottom: 12px;
+    }
+
+    .total {
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+
+    /* =====================================
+       DISCOUNT MESSAGE
+    ===================================== */
+
+    .image-total {
+        width: 100%;
+        height: auto;
+        min-height: 50px;
+
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .image-total img {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    /* =====================================
+       CONTINUE
+    ===================================== */
+
+    .continue p {
+        width: 100%;
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .continue button {
+        width: 100%;
+        height: 48px;
+        font-size: 17px;
+    }
+
+
+    /* =====================================
+       SAFETY IMAGE
+    ===================================== */
+
+    .last-image {
+        width: 100%;
+    }
+
+    .last-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* =========================================
+   MOBILE : 426px AND BELOW
+========================================= */
+
+@media screen and (max-width: 426px) {
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    .header {
+        height: 65px;
+        padding: 0;
+    }
+
+    .header img {
+        width: 145px;
+        height: 32px;
+        margin-left: 15px;
+        margin-top: 14px;
+    }
+
+
+    /* =====================================
+       MAIN CONTAINER
+       PRODUCT + PRICE = ONE COLUMN
+    ===================================== */
+
+    .main-container {
+        width: 94% !important;
+        max-width: none !important;
+
+        margin: 0 auto !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 20px !important;
+    }
+
+
+    /* =====================================
+       PRODUCT DETAILS
+    ===================================== */
+
+    .product-details {
+        width: 100% !important;
+
+        margin-left: 0 !important;
+        margin-top: 15px !important;
+
+        padding-right: 0 !important;
+
+        border-right: none !important;
+
+        min-height: auto !important;
+
+        order: 1 !important;
+    }
+
+
+    .product-details > p {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+
+    /* =====================================
+       EACH PRODUCT
+       ONE BELOW ANOTHER
+    ===================================== */
+
+    .cart-product {
+        width: 100% !important;
+
+        min-height: 125px;
+
+        padding: 12px !important;
+
+        display: flex !important;
+        align-items: flex-start;
+
+        margin-bottom: 12px;
+    }
+
+
+    .cart-product img {
+        width: 75px;
+        height: 75px;
+
+        margin-right: 12px;
+    }
+
+
+    .cart-product > div {
+        min-width: 0;
+    }
+
+
+    .cart-product p:first-child {
+        font-size: 15px;
+
+        margin-bottom: 7px;
+
+        word-break: break-word;
+    }
+
+
+    .cart-product p:nth-child(2) {
+        font-size: 15px;
+
+        margin-bottom: 7px;
+    }
+
+
+    .cart-product span {
+        font-size: 13px;
+    }
+
+
+    .cart-product .remove-product {
+        font-size: 13px;
+    }
+
+
+    /* =====================================
+       PRICE DETAILS
+       ALWAYS LAST
+    ===================================== */
+
+    .price-details {
+        width: 100% !important;
+
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+
+        padding: 18px !important;
+
+        order: 2 !important;
+    }
+
+
+    /* =====================================
+       PRICE DETAILS HEADING
+    ===================================== */
+
+    .topics {
+        font-size: 18px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* =====================================
+       PRODUCT PRICE
+    ===================================== */
+
+    .price {
+        font-size: 15px;
+
+        margin-bottom: 12px;
+    }
+
+    .product-price {
+        font-size: 15px;
+    }
+
+
+    /* =====================================
+       DISCOUNT
+    ===================================== */
+
+    .discount {
+        font-size: 15px;
+
+        padding-bottom: 12px;
+    }
+
+
+    /* =====================================
+       TOTAL
+    ===================================== */
+
+    .total {
+        font-size: 17px;
+
+        padding-bottom: 12px;
+    }
+
+
+    /* =====================================
+       GREEN DISCOUNT MESSAGE
+    ===================================== */
+
+    .image-total {
+        width: 100% !important;
+
+        height: auto;
+        min-height: 50px;
+
+        padding: 10px;
+
+        font-size: 13px;
+    }
+
+    .image-total img {
+        width: 20px;
+        height: 20px;
+
+        margin-right: 8px;
+    }
+
+
+    /* =====================================
+       CONTINUE MESSAGE
+    ===================================== */
+
+    .continue p {
+        width: 100% !important;
+
+        font-size: 12px;
+
+        padding: 9px;
+
+        margin-top: 10px;
+    }
+
+
+    /* =====================================
+       CONTINUE BUTTON
+    ===================================== */
+
+    .continue button {
+        width: 100% !important;
+
+        height: 48px;
+
+        font-size: 16px;
+
+        margin-top: 0;
+    }
+
+
+    /* =====================================
+       LAST / SAFETY IMAGE
+    ===================================== */
+
+    .last-image {
+        width: 100% !important;
+
+        text-align: center;
+    }
+
+    .last-image img {
+        width: 100% !important;
+        max-width: 280px;
+
+        height: auto;
+
+        margin: 10px auto 0;
+    }
+}

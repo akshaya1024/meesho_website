@@ -1,0 +1,1910 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+    color: rgba(0, 0, 0, 0.742);
+}
+.headerSection{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: white;
+}
+.header{
+    display: flex;
+    padding-bottom: 13px;
+    border-bottom: 1.5px solid rgba(62, 2, 62, 0.231);
+    
+}
+.header a{
+    text-decoration: none;
+}
+.meeshologo{
+    height: 38px;
+    width: 180px;
+    margin-left: 50px;
+    margin-top: 15px;
+    
+}
+.searchbar{
+    height: 45px;
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+.search-wrapper {
+    position: relative;
+}
+.search-suggestions {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 99999;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    display: none;
+}
+
+.search-suggestion {
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-suggestion:hover {
+    background-color: #f5f5f5;
+}
+.becomeSupplier{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+    color: rgba(0, 0, 0, 0.68);
+   
+}
+.becomeSupplier a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.742);
+}
+
+.investorRelations{
+    height: 40px;
+    width: 110px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border-left:1px solid rgba(0, 0, 0, 0.189) ;
+    border-right:1px solid rgba(0, 0, 0, 0.189) ;
+    color: rgba(0, 0, 0, 0.68); 
+    padding-left: 20px;
+    
+}
+
+.profile{
+  
+    height: 40px;
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.68); 
+    text-decoration: none;
+    position: relative;
+
+}
+.profile:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.profile:hover .profile-menu {
+    display: block;
+}
+
+.profile span{
+    margin-left: 8px;
+}
+.profile-menu{
+    position: absolute;
+    display: none;
+    height: 270px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+    left: -100px;
+    
+    border: 1px solid black;
+}
+
+.helloUser{
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.616);
+    margin-right: 30px;
+    padding-top: 10px;
+}
+.helloUser p{
+    font-size: 18px;
+    padding-left: 8px;
+}
+.helloUser span{
+    font-size: 13px;
+
+    color: rgba(128, 128, 128, 0.906);
+    
+}
+.helloUser button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(186, 6, 186);
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.helloUser button a {
+    text-decoration: none;
+    color: white;
+}
+.my-order{
+    margin-top: 10px;
+    display: flex;
+     border-bottom: 1.5px solid rgba(128, 128, 128, 0.616);
+    margin-right: 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.my-order p{
+    margin-top: -1px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.deleteMeeshoAccount p {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 20px;
+   
+   
+
+}
+.deleteMeeshoAccount a{
+     color: purple;
+     text-decoration: none;
+}
+
+.cart{
+    height: 30px;
+    width: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+    font-size: 17px;
+    color: rgba(128, 128, 128, 0.374); 
+}
+.cart:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.cart img{
+    height:30px;
+    width: 30px;
+}
+.cart p{
+    color:rgba(0, 0, 0, 0.705);
+}
+.parentnav{
+    margin-top: 20px;
+    border-bottom: 1.5px solid rgba(128, 0, 128, 0.29);
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+.navbar{
+    margin-left: 30px;
+    padding-bottom: 5px;
+   
+}
+.navbar:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.firstnavbar{
+    margin-left: 120px;
+    padding-bottom: 5px;
+    
+}
+.firstnavbar:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.downloadApp img{
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+}
+.relatedItems{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.relatedItems a{
+    color: purple;
+    text-decoration: none;
+
+}
+.main-container{
+    display: flex;
+    column-gap: 20px;
+    height: 1000px;
+}
+.product-side{
+    height: 600px;
+    width: 550px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.436);
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+.product-image{
+    height: 500px;
+    width: 500px;
+    border: 1px solid rgba(128, 128, 128, 0.436);
+    margin-left: 20px;
+    border-radius: 5px;
+    
+
+}
+.product-image img{
+    height: 450px;
+    width: 380px;
+    margin-left: 50px;
+
+}
+.add-to-cart{
+    height: 50px;
+    width: 220px;
+    color: purple;
+    border: 1px solid purple;
+    font-size: 18px;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.buynow{
+    height: 50px;
+    width: 230px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-left: 20px;
+    background-color: purple;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.price-details{
+    width: 560px;
+    height: 170px;
+    border: 1px solid rgba(128, 128, 128, 0.516);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+
+}
+.price-details p{
+    color: gray;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.reviews {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.413);
+}
+.price{
+    font-size: 30px;
+    margin-left: 5px;
+}
+.icon{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.price-details button{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: rgba(0, 100, 0, 0.815);
+    color: white;
+    border: none;
+}
+.size{
+    width: 560px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.516);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.size button{
+    height: 35px;
+    width: 80px;
+    background-color: rgba(168, 5, 168, 0.121);
+    color: purple;
+    border: 1px solid purple;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.highlight{
+    
+    width: 560px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.516);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.highlight span{
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.712);
+}
+.highlight p{
+    font-size: 18px;
+}
+.firstRow{
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.plating{
+    padding-top: 50px;
+}
+.secondRow{
+    float: left;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.colour{
+    padding-top: 50px;
+}
+.seller{
+    width: 560px;
+    height: 200px;
+    border: 1px solid rgba(128, 128, 128, 0.516);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+    display: flex;
+}
+.shop-image img{
+    height:60px;
+    width: 60px;
+}
+.mahalaxmi{
+    margin-top: 20px;
+    display: flex;
+}
+.mahalaxmi button{
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    color: purple;
+    border-radius: 5px;
+    border: 1px solid purple;
+    margin-left: 150px;
+
+}
+.buttonrow {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buttonrow button{
+    height: 30px;
+    width: 60px;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 30px;
+}
+.buttonrow p{
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.views{
+    color: gray;
+}
+.views span{
+    padding-left: 20px;
+}
+.suggestion{
+    height: 400px;
+    width: 230px;
+    border: 1px solid rgba(128, 128, 128, 0.228);
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.suggestion img{
+    height: 230px;
+    width: 180px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.suggestion p{
+    margin-bottom: 5px;
+    color: rgba(128, 128, 128, 0.619);
+    margin-top: 8px;
+}
+.suggestion button{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: rgba(0, 100, 0, 0.815);
+    color: white;
+    border: none;
+}
+.suggestion span{
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.769);
+}
+.products {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 10px 20px;
+    align-content: flex-start;
+}
+
+.product-card {
+    width: calc(25% - 15px);
+    box-sizing: border-box;
+}
+.suggestion-box{
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    height: 8200px;
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.meesho-address{
+    
+    background-color: rgba(230, 230, 250, 0.361);
+    height: 350px;
+    padding-top: 50px;
+    margin-top: 30px;
+    width: 100%;
+   
+}
+.flex-add{
+    display: flex;
+     gap: 20px;
+}
+.trustedByIndians{
+    margin-left: 30px;
+    width: 380px;
+}
+.trustedByIndians img{
+    height: 50px;
+    width: 170px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.trustedByIndians h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.trustedByIndians p{
+    margin-bottom: 20px;
+}
+.careers{
+    font-size: 18px;
+    
+}
+.careers a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.651);
+    
+}
+.reachOut{
+    width: 200px;
+}
+.reachOut img{
+    margin-left: 10px;
+}
+.reachOut h3{
+    margin-left: 10px;
+}
+#cartToast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #292b3d;
+    color: white;
+
+    padding: 16px 22px;
+    border-radius: 8px;
+
+    display: none;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    z-index: 999999;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+#cartToast i {
+    font-size: 18px;
+    color: white;
+}
+
+
+#loadingScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.411);
+    z-index: 99999;
+
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    font-size: 50px;
+    color: purple;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+
+/* ==========================================
+   1440px TO 1025px RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .meeshologo {
+        width: 160px;
+        height: 35px;
+        margin-left: 25px;
+    }
+
+    .searchbar {
+        width: 480px;
+        margin-left: 15px;
+    }
+
+    .becomeSupplier {
+        margin-left: 15px;
+        width: 55px;
+    }
+
+    .investorRelations {
+        margin-left: 25px;
+        width: 105px;
+        padding-left: 15px;
+    }
+
+    .profile {
+        margin-left: 25px;
+    }
+
+    .cart {
+        margin-left: 40px;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .parentnav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        white-space: nowrap;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin-left: 0;
+    }
+
+
+    /* ================= DOWNLOAD APP ================= */
+
+    .downloadApp img {
+        width: 100%;
+        height: 75px;
+        object-fit: cover;
+    }
+
+
+    /* ================= RELATED ITEMS ================= */
+
+    .relatedItems {
+        margin-left: 30px;
+    }
+
+
+    /* ================= MAIN PRODUCT ================= */
+
+    .main-container {
+        display: flex;
+        column-gap: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .product-side {
+        width: 48%;
+        margin-left: 30px;
+    }
+
+    .product-image {
+        width: 90%;
+        height: 480px;
+        margin-left: 15px;
+    }
+
+    .product-image img {
+        width: 75%;
+        height: 430px;
+        object-fit: contain;
+        margin-left: 12%;
+    }
+
+    .add-to-cart {
+        width: 43%;
+        margin-left: 15px;
+    }
+
+    .buynow {
+        width: 43%;
+        margin-left: 10px;
+    }
+
+
+    /* ================= RIGHT SIDE ================= */
+
+    .price-details,
+    .size,
+    .highlight,
+    .seller {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .price-details {
+        height: 170px;
+    }
+
+    .size {
+        height: 145px;
+    }
+
+    .highlight {
+        height: 250px;
+    }
+
+    .seller {
+        height: 200px;
+    }
+
+
+    /* ================= SELLER ================= */
+
+    .mahalaxmi {
+        align-items: center;
+    }
+
+    .mahalaxmi h3 {
+        font-size: 16px;
+    }
+
+    .mahalaxmi button {
+        margin-left: 80px;
+    }
+
+    .buttonrow {
+        gap: 15px;
+    }
+
+    .buttonrow p {
+        margin-left: 15px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .meesho-address {
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    .flex-add {
+        gap: 15px;
+        justify-content: space-around;
+    }
+
+    .trustedByIndians {
+        width: 300px;
+        margin-left: 15px;
+    }
+
+    .trustedByIndians h2 {
+        font-size: 24px;
+    }
+
+    .trustedByIndians img {
+        width: 135px;
+        height: 45px;
+    }
+
+    .careers {
+        font-size: 16px;
+    }
+
+    .reachOut {
+        width: 180px;
+    }
+
+}
+/* ==========================================
+   1024px TO 769px RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .meeshologo {
+        width: 135px;
+        height: 32px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .searchbar {
+        width: 300px;
+        height: 42px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .becomeSupplier {
+        width: 50px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .investorRelations {
+        width: 90px;
+        margin-left: 15px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    .profile {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    .cart {
+        margin-left: 25px;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .parentnav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 14px;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin-left: 0;
+    }
+
+
+    /* ================= DOWNLOAD APP ================= */
+
+    .downloadApp img {
+        width: 100%;
+        height: 65px;
+        object-fit: cover;
+    }
+
+
+    /* ================= RELATED ITEMS ================= */
+
+    .relatedItems {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+
+    /* ================= MAIN CONTAINER ================= */
+
+    .main-container {
+        display: flex;
+        column-gap: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* ================= LEFT PRODUCT ================= */
+
+    .product-side {
+        width: 48%;
+        height: 570px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .product-image {
+        width: 95%;
+        height: 430px;
+        margin-left: 0;
+    }
+
+    .product-image img {
+        width: 80%;
+        height: 390px;
+        object-fit: contain;
+        margin-left: 10%;
+    }
+
+
+    /* ================= BUTTONS ================= */
+
+    .add-to-cart {
+        width: 45%;
+        height: 48px;
+        margin-left: 5px;
+        font-size: 16px;
+    }
+
+    .buynow {
+        width: 45%;
+        height: 48px;
+        margin-left: 5px;
+        font-size: 16px;
+    }
+
+
+    /* ================= RIGHT SIDE ================= */
+
+    .price-details,
+    .size,
+    .highlight,
+    .seller {
+        width: 95%;
+        margin-left: 0;
+    }
+
+
+    /* ================= PRICE ================= */
+
+    .price-details {
+        height: 165px;
+        padding-top: 25px;
+    }
+
+    .price-details p {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 27px;
+    }
+
+
+    /* ================= SIZE ================= */
+
+    .size {
+        height: 140px;
+        padding-top: 25px;
+    }
+
+    .size button {
+        width: 65px;
+        height: 34px;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+
+    /* ================= HIGHLIGHTS ================= */
+
+    .highlight {
+        height: 235px;
+        padding-top: 25px;
+    }
+
+    .firstRow {
+        margin-left: 20px;
+    }
+
+    .secondRow {
+        margin-left: 80px;
+    }
+
+    .highlight p {
+        font-size: 16px;
+    }
+
+
+    /* ================= SELLER ================= */
+
+    .seller {
+        height: 190px;
+        padding-top: 25px;
+    }
+
+    .shop-image img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mahalaxmi h3 {
+        font-size: 14px;
+    }
+
+    .mahalaxmi button {
+        width: 85px;
+        height: 28px;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+
+    .buttonrow {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .buttonrow p {
+        margin-left: 10px;
+    }
+
+    .views {
+        font-size: 13px;
+    }
+
+    .views span {
+        padding-left: 10px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .meesho-address {
+        height: 320px;
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+
+    .flex-add {
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .trustedByIndians {
+        width: 250px;
+        margin-left: 15px;
+    }
+
+    .trustedByIndians h2 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .trustedByIndians p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .trustedByIndians img {
+        width: 105px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .careers {
+        font-size: 14px;
+    }
+
+    .reachOut {
+        width: 150px;
+    }
+
+    .reachOut h3 {
+        font-size: 16px;
+    }
+
+    .reachOut img {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+    }
+
+}
+
+/* ==========================================
+   768px TO 427px RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) and (min-width: 427px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        width: 100%;
+        padding-bottom: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .meeshologo {
+        width: 130px;
+        height: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .search-wrapper {
+        order: 5;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .searchbar {
+        width: calc(100% - 30px);
+        height: 42px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .search-suggestions {
+        width: calc(100% - 30px) !important;
+        left: 15px !important;
+    }
+
+    .becomeSupplier {
+        width: auto;
+        height: auto;
+        margin-left: 15px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .investorRelations {
+        display: none;
+    }
+
+    .profile {
+        margin-left: auto;
+        margin-top: 10px;
+        width: 55px;
+        font-size: 15px;
+    }
+
+    .profile span {
+        margin-left: 5px;
+    }
+
+    .profile-menu {
+        left: -150px;
+    }
+
+    .cart {
+        margin-left: 20px;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .parentnav {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 20px;
+        margin-top: 10px;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin-left: 0;
+        flex-shrink: 0;
+        font-size: 14px;
+    }
+
+
+    /* ================= DOWNLOAD APP ================= */
+
+    .downloadApp img {
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+        margin-top: 5px;
+    }
+
+
+    /* ================= RELATED ITEMS ================= */
+
+    .relatedItems {
+        margin: 12px 15px;
+        font-size: 13px;
+    }
+
+    .relatedItems span {
+        display: block;
+        margin-top: 5px;
+    }
+
+
+    /* ================= MAIN CONTAINER ================= */
+
+    .main-container {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* ================= PRODUCT SIDE ================= */
+
+    .product-side {
+        width: 100%;
+        height: auto;
+        margin: 15px 0 0 0;
+        border-bottom: none;
+    }
+
+    .product-image {
+        width: 90%;
+        height: 430px;
+        margin: 0 auto;
+    }
+
+    .product-image img {
+        width: 75%;
+        height: 400px;
+        object-fit: contain;
+        margin-left: 12.5%;
+    }
+
+
+    /* ================= BUTTONS ================= */
+
+    .add-to-cart {
+        width: 43%;
+        height: 48px;
+        margin-left: 6%;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .buynow {
+        width: 43%;
+        height: 48px;
+        margin-left: 3%;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+
+    /* ================= RIGHT SIDE ================= */
+
+    .price-details,
+    .size,
+    .highlight,
+    .seller {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ================= PRICE DETAILS ================= */
+
+    .price-details {
+        height: 160px;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .price-details p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+    .reviews {
+        font-size: 13px;
+    }
+
+
+    /* ================= SIZE ================= */
+
+    .size {
+        height: 135px;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .size h3 {
+        font-size: 17px;
+    }
+
+    .size button {
+        width: 65px;
+        height: 34px;
+        margin-top: 22px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+
+    /* ================= HIGHLIGHTS ================= */
+
+    .highlight {
+        height: 220px;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .highlight h3 {
+        font-size: 17px;
+    }
+
+    .firstRow {
+        margin-left: 15px;
+        margin-top: 18px;
+    }
+
+    .secondRow {
+        margin-left: 70px;
+        margin-top: 18px;
+    }
+
+    .plating,
+    .colour {
+        padding-top: 35px;
+    }
+
+    .highlight span {
+        font-size: 13px;
+    }
+
+    .highlight p {
+        font-size: 16px;
+    }
+
+
+    /* ================= SELLER ================= */
+
+    .seller {
+        height: 180px;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .shop-image img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mahalaxmi {
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    .mahalaxmi h3 {
+        font-size: 14px;
+        max-width: 220px;
+    }
+
+    .mahalaxmi button {
+        width: 80px;
+        height: 28px;
+        margin-left: 20px;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    .buttonrow {
+        gap: 8px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .buttonrow button {
+        width: 55px;
+        height: 28px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .buttonrow p {
+        margin-left: 8px;
+        font-size: 13px;
+    }
+
+    .views {
+        font-size: 12px;
+    }
+
+    .views span {
+        padding-left: 8px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .meesho-address {
+        height: auto;
+        min-height: 400px;
+        margin-top: 40px;
+        padding: 35px 20px;
+    }
+
+    .flex-add {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .trustedByIndians {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .trustedByIndians h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .trustedByIndians p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .trustedByIndians img {
+        width: 120px;
+        height: 42px;
+        margin-top: 15px;
+    }
+
+    .careers {
+        font-size: 14px;
+    }
+
+    .reachOut {
+        width: 100%;
+    }
+
+    .reachOut h3 {
+        font-size: 16px;
+    }
+
+    .reachOut img {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+    }
+
+
+    /* ================= TOAST ================= */
+
+    #cartToast {
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+    }
+
+}
+/* ==========================================
+   426px AND BELOW RESPONSIVE
+   ========================================== */
+
+@media screen and (max-width: 426px) {
+
+    /* ================= BODY ================= */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    .header {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 8px;
+    }
+
+    .meeshologo {
+        width: 200px;
+        height: 30px;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-right: 60px;
+    }
+
+    .becomeSupplier {
+        margin-left: 30px;
+        margin-top: 8px;
+        width: auto;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .investorRelations {
+        display: none;
+    }
+
+    .profile {
+        width: 48px;
+        height: 35px;
+        margin-left: 30px;
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    .profile span {
+        margin-left: 3px;
+    }
+
+    .cart {
+        width: 30px;
+        height: 35px;
+        margin-left: 25px;
+        margin-right: 10px;
+        margin-top: -10px;
+    }
+
+    .cart img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .cart p {
+        font-size: 13px;
+    }
+
+
+    /* ================= SEARCH ================= */
+
+    .search-wrapper {
+        order: 5;
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    .searchbar {
+        width: calc(100% - 20px);
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 13px;
+        padding-left: 10px;
+    }
+
+    .search-suggestions {
+        width: calc(100% - 20px) !important;
+        left: 10px !important;
+    }
+
+    .search-suggestion {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+
+    /* ================= PROFILE MENU ================= */
+
+    .profile-menu {
+        width: 230px;
+        left: -170px;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .parentnav {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 18px;
+        margin-top: 8px;
+        padding: 8px 10px;
+        margin-bottom: 5px;
+    }
+
+    .firstnavbar,
+    .navbar {
+        margin-left: 0;
+        flex-shrink: 0;
+        font-size: 13px;
+    }
+
+
+    /* ================= DOWNLOAD APP ================= */
+
+    .downloadApp img {
+        width: 100%;
+        height: 50px;
+        object-fit: cover;
+        margin-top: 3px;
+    }
+
+
+    /* ================= RELATED ITEMS ================= */
+
+    .relatedItems {
+        margin: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .relatedItems span {
+        display: block;
+        margin-top: 3px;
+    }
+
+
+    /* ================= MAIN CONTAINER ================= */
+
+    .main-container {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* ================= PRODUCT IMAGE ================= */
+
+    .product-side {
+        width: 100%;
+        height: auto;
+        margin: 10px 0 0 0;
+        border-bottom: none;
+    }
+
+    .product-image {
+        width: calc(100% - 20px);
+        height: 330px;
+        margin: 0 10px;
+    }
+
+    .product-image img {
+        width: 80%;
+        height: 310px;
+        object-fit: contain;
+        margin-left: 10%;
+    }
+
+
+    /* ================= BUTTONS ================= */
+
+    .add-to-cart {
+        width: 43%;
+        height: 45px;
+        margin-left: 5%;
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    .buynow {
+        width: 43%;
+        height: 45px;
+        margin-left: 3%;
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+
+    /* ================= PRICE DETAILS ================= */
+
+    .price-details {
+        width: calc(100% - 20px);
+        height: 150px;
+        margin: 20px 10px 0 10px;
+        padding: 20px 10px;
+    }
+
+    .price-details p {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .price {
+        font-size: 25px;
+    }
+
+    .icon {
+        font-size: 16px;
+    }
+
+    .price-details button {
+        width: 55px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .reviews {
+        font-size: 11px;
+    }
+
+
+    /* ================= SIZE ================= */
+
+    .size {
+        width: calc(100% - 20px);
+        height: 125px;
+        margin: 15px 10px 0 10px;
+        padding: 20px 10px;
+    }
+
+    .size h3 {
+        font-size: 16px;
+    }
+
+    .size button {
+        width: 52px;
+        height: 32px;
+        margin-top: 20px;
+        margin-right: 2px;
+        font-size: 13px;
+    }
+
+
+    /* ================= HIGHLIGHTS ================= */
+
+    .highlight {
+        width: calc(100% - 20px);
+        height: 205px;
+        margin: 15px 10px 0 10px;
+        padding: 20px 10px;
+    }
+
+    .highlight h3 {
+        font-size: 16px;
+    }
+
+    .firstRow {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .secondRow {
+        margin-left: 55px;
+        margin-top: 15px;
+    }
+
+    .plating,
+    .colour {
+        padding-top: 30px;
+    }
+
+    .highlight span {
+        font-size: 12px;
+    }
+
+    .highlight p {
+        font-size: 14px;
+    }
+
+
+    /* ================= SELLER ================= */
+
+    .seller {
+        width: calc(100% - 20px);
+        height: 175px;
+        margin: 15px 10px 0 10px;
+        padding: 20px 10px;
+    }
+
+    .shop-image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mahalaxmi {
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .mahalaxmi h3 {
+        font-size: 12px;
+        max-width: 170px;
+    }
+
+    .mahalaxmi button {
+        width: 70px;
+        height: 27px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .buttonrow {
+        gap: 5px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .buttonrow button {
+        width: 50px;
+        height: 27px;
+        margin-left: 5px;
+        font-size: 11px;
+    }
+
+    .buttonrow p {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .views {
+        font-size: 10px;
+    }
+
+    .views span {
+        padding-left: 5px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .meesho-address {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        margin-top: 30px;
+        padding: 30px 15px;
+    }
+
+    .flex-add {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .trustedByIndians {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .trustedByIndians h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .trustedByIndians p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .trustedByIndians img {
+        width: 105px;
+        height: 38px;
+        margin-top: 12px;
+        margin-right: 5px;
+    }
+
+    .careers {
+        width: 45%;
+        font-size: 13px;
+    }
+
+    .reachOut {
+        width: 100%;
+    }
+
+    .reachOut h3 {
+        font-size: 15px;
+    }
+
+    .reachOut img {
+        width: 23px;
+        height: 23px;
+        margin-left: 4px;
+    }
+
+
+    /* ================= TOAST ================= */
+
+    #cartToast {
+        width: 90%;
+        max-width: 350px;
+        bottom: 20px;
+        padding: 13px 15px;
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
